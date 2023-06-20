@@ -5,57 +5,61 @@ body
     background-color:#6abadeba;
     font-family: 'Arial';
 }
-.login{
-        width: 382px;
-        overflow: hidden;
-        margin: auto;
-        margin: 20 0 0 450px;
-        padding: 80px;
-        background: #23463f;
-        border-radius: 15px ;
 
+
+h1 {
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 35px;
+    color: rgba(219, 33, 0, 0.767);
 }
-h2{
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    /* width: 50%; */
+    width: 600px;
+    transition: transform 2s;
+}
+
+main img:hover {
+    transform: scale(1.1); 
+}
+
+
+.left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    color: #277582;
-    padding: 20px;
-}
-label{
-    color: #08ffd1;
-    font-size: 17px;
-}
-#Uname{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
-}
-#Pass{
-    width: 300px;
-    height: 30px;
-    border: none;
-    border-radius: 3px;
-    padding-left: 8px;
-
+    width: 40%;
 }
 
-span{
-    color: white;
-    font-size: 17px;
+.right-div {
+    /* width: 60%; */
+}
+
+.left-div span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: rgb(18, 0, 59);
 }
 
 
 .submit_btn{
     cursor: pointer;
     text-decoration: none;
-    padding: 5px;
-    width: 100px;
-    height: 30px;
+    padding: 20px;
     border: none;
-    border-radius: 17px;
+    border-radius: 20px;
     text-align: center;
-    margin-left: 100px;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 20px;
    
 }
 
@@ -63,28 +67,26 @@ span{
 /* hover animation */
 
 .child {
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 
     infinite;
     transform-origin: right;
 }
 
 .bounce:hover {
-    background-color: yellow;
+    background-color: rgb(235, 65, 23);
     animation-name: bounce;
     animation-timing-function:ease;
 }
 @keyframes bounce {
   0%   { transform: translateX(0); }
-  50%  { transform: translateX(100px); }
+  50%  { transform: translateX(300px); }
   100% { transform: translateX(0); }
 }
 
 
 
-.login:hover .input_field {
-    background-color: yellow;
-}
+
 
 
 /* must practice  hover in .login box (parent) , bg color change in input field (child)  */
